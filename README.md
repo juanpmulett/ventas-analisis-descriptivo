@@ -106,13 +106,14 @@ ventas-analisis-descriptivo/
 ├── outputs/              # gráficos y tablas generados
 └── informe/              # informe completo en PDF
 ```
-Cómo reproducirlo
-Descarga el dataset desde Kaggle y guárdalo en la carpeta `data/`.
-Instala las dependencias:
-```bash
-   pip install -r requirements.txt
-   ```
-Ejecuta el notebook en `notebooks/` de principio a fin.
+## Cómo reproducirlo
+
+El análisis está escrito para Google Colab.
+
+1. Descarga el dataset desde [Kaggle](https://www.kaggle.com/datasets/danielsowah123/retail-sales-dataset). El archivo usado es `Sales_transactions_2022_2025.csv`.
+2. Abre el notebook en [Google Colab](https://colab.research.google.com) (menú Archivo → Subir cuaderno).
+3. Ejecuta la primera celda y, cuando lo pida, selecciona el archivo CSV.
+4. Ejecuta el resto de las celdas en orden.
 Herramientas: Python (pandas, numpy, matplotlib, scipy).
 Autor
 Juan Pablo Mulett Vergara: economista, especialización en Finanzas en curso (Fundación Universitaria Compensar).
