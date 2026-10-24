@@ -114,6 +114,7 @@ El análisis está escrito para Google Colab.
 2. Abre el notebook en [Google Colab](https://colab.research.google.com) (menú Archivo → Subir cuaderno).
 3. Ejecuta la primera celda y, cuando lo pida, selecciona el archivo CSV.
 4. Ejecuta el resto de las celdas en orden.
+   ```
 Herramientas: Python (pandas, numpy, matplotlib, scipy).
 Autor
 Juan Pablo Mulett Vergara: economista, especialización en Finanzas en curso (Fundación Universitaria Compensar).
