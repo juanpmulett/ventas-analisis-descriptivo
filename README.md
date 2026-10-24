@@ -1,5 +1,6 @@
 Análisis descriptivo de 17.830 transacciones de ventas
 > ¿Qué canales y categorías generan más ventas y utilidad, y qué tan fuerte es la relación entre el monto vendido y la utilidad?
+![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)
 Análisis estadístico descriptivo en Python sobre un conjunto de transacciones de venta (datos sintéticos de Kaggle). Incluye limpieza de datos, análisis univariado y bivariado, detección de valores atípicos y medidas descriptivas.
 Hallazgo principal: cerca del 10% de las transacciones (las de mayor valor) concentra el 51% de las ventas y el 46% de la utilidad, y el margen es casi igual en todos los canales (≈20%): lo que mueve la utilidad es el volumen, no la rentabilidad.
 ---
@@ -20,6 +21,7 @@ Las empresas venden por múltiples canales y entender cuáles generan más ingre
 Trabajo realizado en la asignatura Análisis Estadístico de Información de la Especialización en Finanzas, Fundación Universitaria Compensar (2026).
 Datos
 Fuente: Retail Sales Dataset (Daniel Sowah), Kaggle.
+Archivo utilizado: `Sales_transactions_2022_2025.csv`.
 Naturaleza: datos sintéticos con fines educativos. Los resultados describen el comportamiento de la base, no el de un mercado real.
 Tamaño original: 18.045 registros y 36 variables.
 Tamaño tras la limpieza: 17.830 registros (98,8% de la base original).
@@ -100,21 +102,19 @@ Estructura del repositorio
 ```
 ventas-analisis-descriptivo/
 ├── README.md
-├── requirements.txt
-├── data/                 # enlace de descarga del dataset (no se sube el archivo)
-├── notebooks/            # código del análisis
-├── outputs/              # gráficos y tablas generados
-└── informe/              # informe completo en PDF
+├── notebooks/
+│   └── analisis_ventas.ipynb   # código del análisis (Google Colab)
+├── outputs/                    # gráficos generados
+├── informe/                    # informe completo en PDF
+└── data/
+    └── LEEME.md                # enlace de descarga del dataset (el archivo no se incluye)
 ```
-## Cómo reproducirlo
-
+Cómo reproducirlo
 El análisis está escrito para Google Colab.
-
-1. Descarga el dataset desde [Kaggle](https://www.kaggle.com/datasets/danielsowah123/retail-sales-dataset). El archivo usado es `Sales_transactions_2022_2025.csv`.
-2. Abre el notebook en [Google Colab](https://colab.research.google.com) (menú Archivo → Subir cuaderno).
-3. Ejecuta la primera celda y, cuando lo pida, selecciona el archivo CSV.
-4. Ejecuta el resto de las celdas en orden.
-   ```
+Descarga el dataset desde Kaggle. El archivo utilizado es `Sales_transactions_2022_2025.csv`.
+Abre el notebook en Colab con el botón de arriba (o desde colab.research.google.com, menú Archivo → Subir cuaderno).
+Ejecuta la primera celda y, cuando lo pida, selecciona el archivo CSV.
+Ejecuta el resto de las celdas en orden.
 Herramientas: Python (pandas, numpy, matplotlib, scipy).
 Autor
 Juan Pablo Mulett Vergara: economista, especialización en Finanzas en curso (Fundación Universitaria Compensar).
